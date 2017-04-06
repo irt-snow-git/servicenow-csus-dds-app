@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Supply Orders" max_length="40" name="x_casus_printsmart_supply_orders" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
+        <element default="0" label="Amount Ordered" mandatory="true" max_length="20" name="amount_ordered" type="decimal"/>
+        <element label="Date Received" max_length="40" name="date_received" read_only="true" type="glide_date"/>
+        <element default="javascript:gs.now();" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Ordered" mandatory="true" max_length="40" name="ordered" type="glide_date" use_dynamic_default="true"/>
+        <element label="Received" max_length="40" name="received" type="boolean"/>
+        <element label="Supply Type" mandatory="true" max_length="32" name="supply_type" reference="x_casus_printsmart_supplies" type="reference"/>
+        <index name="index">
+            <element name="supply_type"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Supply Deliveries" max_length="40" name="x_casus_printsmart_supply_deliveries" type="collection">
+        <element label="Amount of Boxes Delivered" mandatory="true" max_length="20" name="amount_of_boxes_delivered" type="decimal"/>
+        <element default="javascript:gs.now();" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Delivered" mandatory="true" max_length="40" name="delivered" type="glide_date" use_dynamic_default="true"/>
+        <element label="Location" mandatory="true" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// calculated based on the current supply of supply (item)&#13;&#10;        //get supply record&#13;&#10;        var supply = new GlideRecord('x_casus_printsmart_supplies');&#13;&#10;        supply.get(current.supply_type);&#13;&#10;        gs.addInfoMessage();&#13;&#10;&#9;return supply.supply_quantity;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Current Stock Level" max_length="20" name="remaining_supply_quantity" read_only="true" type="decimal"/>
+        <element label="Supply Type" mandatory="true" max_length="32" name="supply_type" reference="x_casus_printsmart_supplies" type="reference"/>
+        <index name="index">
+            <element name="supply_type"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+    </element>
+</database>

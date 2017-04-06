@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Supplies Received" max_length="40" name="x_casus_printsmart_supplies_received" type="collection">
+        <element label="Quantity Received" mandatory="true" max_length="20" name="quantity_received" type="decimal"/>
+        <element default="javascript:gs.now();" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Received Date" mandatory="true" max_length="40" name="received_date" type="glide_date" use_dynamic_default="true"/>
+        <element label="Supply Type" mandatory="true" max_length="32" name="supply_type" reference="x_casus_printsmart_supplies" type="reference"/>
+        <index name="index">
+            <element name="supply_type"/>
+        </index>
+    </element>
+</database>

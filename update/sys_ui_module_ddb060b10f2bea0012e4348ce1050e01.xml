@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="PrintSmart Inventory Management">10bad8bd0fe7ea0012e4348ce1050eb6</application>
+        <filter table="x_casus_printsmart_supply_deliveries">supply_type=02ed94310f2bea0012e4348ce1050efa^EQ<item endquery="false" field="supply_type" goto="false" newquery="false" operator="=" or="false" value="02ed94310f2bea0012e4348ce1050efa"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <name>Paper Deliveries</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_casus_printsmart.user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2016-12-07 22:23:33</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>ddb060b10f2bea0012e4348ce1050e01</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Paper Deliveries</sys_name>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sys_ui_module_ddb060b10f2bea0012e4348ce1050e01</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-01-26 18:47:31</sys_updated_on>
+        <table>x_casus_printsmart_supply_deliveries</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Building Paper Levels" max_length="40" name="x_casus_printsmart_building_paper_levels" type="collection">
+        <element default="0" label="Amount of Cases Delivered" max_length="20" name="amount_of_cases_delivered" type="decimal"/>
+        <element label="Building" mandatory="true" max_length="32" name="building" reference="cmn_location" type="reference"/>
+        <element default="0" label="Current Stock Level" max_length="20" name="current_stock_level" type="decimal"/>
+        <element default="0" label="Expected Stock Level" max_length="20" name="expected_stock_level" type="decimal"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// remaining stock is expected level - (current + delivered)&#13;&#10;&#9;return (current.expected_stock_level - (current.current_stock_level + current.amount_of_cases_delivered));  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="0" label="Remaining Stock to Deliver" max_length="20" name="remaining_stock_to_deliver" type="decimal" virtual="true"/>
+        <element label="Term End Date" mandatory="true" max_length="40" name="term_end_date" type="glide_date"/>
+        <element label="Term Start Date" mandatory="true" max_length="40" name="term_start_date" type="glide_date"/>
+        <index name="index">
+            <element name="building"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Prevent form submission if attempting to deliver more than remaining supply level</description>
+        <field>amount_of_boxes_delivered</field>
+        <global>true</global>
+        <messages/>
+        <name>onSubmitSupplyDelivery</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//Type appropriate comment here, and begin script below
+	g_form.hideErrorBox("amount_of_boxes_delivered");
+	var delivAmt = g_form.getValue("amount_of_boxes_delivered");
+	var currStockLvl = g_form.getValue("remaining_supply_quantity");
+	
+	if(currStockLvl - delivAmt < 0) {
+		g_form.showErrorBox("amount_of_boxes_delivered", "You cannot deliver more paper than is currently in stock. Please adjust the delivery amount to less than " + currStockLvl + ".");
+		return false;
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-01-10 00:16:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>e6a6f2140f18b20012e4348ce1050ecb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>onSubmitSupplyDelivery</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sys_script_client_e6a6f2140f18b20012e4348ce1050ecb</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-01-27 23:52:31</sys_updated_on>
+        <table>x_casus_printsmart_supply_deliveries</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

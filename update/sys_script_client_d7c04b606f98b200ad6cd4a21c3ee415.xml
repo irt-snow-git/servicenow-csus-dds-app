@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Populate the remaining supply amount when a new supply is added</description>
+        <field>supply_type</field>
+        <global>true</global>
+        <messages/>
+        <name>Populate Current Supply Quantity on Chan</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (newValue === '') {
+	   g_form.setValue("remaining_supply_quantity", '');
+      return;
+   }
+	var ga = new GlideAjax('x_casus_printsmart.RetrieveRemainingSupplyAmount');
+	ga.addParam('sysparm_name','getSupplyAmt');
+	ga.addParam('sysparm_supply_type', newValue);
+	ga.getXML(callback);
+ 
+	function callback(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue("remaining_supply_quantity", answer);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-01-10 19:39:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d7c04b606f98b200ad6cd4a21c3ee415</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Populate Current Supply Quantity on Chan</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sys_script_client_d7c04b606f98b200ad6cd4a21c3ee415</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-01-27 23:53:30</sys_updated_on>
+        <table>x_casus_printsmart_supply_deliveries</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

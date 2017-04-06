@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>A standard user of the application, this role should be assigned to all users who are members of the PrintSmart or other applicable assignment groups.</description>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_casus_printsmart.user</name>
+        <suffix>user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2016-12-07 21:57:11</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0baad8bd0fe7ea0012e4348ce1050e85</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_casus_printsmart.user</sys_name>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sys_user_role_0baad8bd0fe7ea0012e4348ce1050e85</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2016-12-07 22:01:07</sys_updated_on>
+    </sys_user_role>
+</record_update>
