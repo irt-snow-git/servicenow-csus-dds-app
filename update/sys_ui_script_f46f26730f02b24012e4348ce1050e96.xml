@@ -6,6 +6,8 @@
         <global>false</global>
         <name>x_casus_printsmart.angular_controller</name>
         <script><![CDATA[var myApp = angular.module('myApp', []);
+var supplyReferences = [];  //Holds all supplies (Global)
+
 
 myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
     
@@ -13,7 +15,7 @@ myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
 	$scope.max = 6;//Max number of data allowed
 	$scope.currentDate = new Date(getCurrentDate());//Date object of current date
 	
-	$scope.data.supply = [{
+	$scope.data.supply = [{//Holds data that we will send to server for insert
 		"supply_type": "",
 		"quantity_received": "",
 		"received_date": ""
@@ -58,6 +60,22 @@ myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
 		});
 	};
 	
+		//Calls script include to submit records manually
+	$scope.getSupplyReferences = function () {
+		//console.log($scope.data.supply);//Test
+		var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+		ajax.addParam('sysparm_name','getSupplyTableReferences');
+		console.log('LOL_K');
+		ajax.getXML(handleSupplyReferences);
+		ajax.getXMLWait();
+		//Now the supply references should have data (sys_id and supply_type)
+		console.log(supplyReferences);
+	};
+	//Actually sets the values in the controller
+	$scope.setSupplyReferences = function (supRefs) {
+			alert("test");
+	};
+	
 }])
 
 //This is used to autofocus the first field after dynamically adding a new obj
@@ -80,6 +98,24 @@ myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
 });
 //END Controller//
 
+//Handles the XML call that retrieves supply sys_ids and supply_types
+//Assigns them to dat global supplyReferences 
+function handleSupplyReferences(response) {
+	var supplies = response.responseXML.getElementsByTagName("supply");
+	for (var i = 0; i < supplies.length; i++ ) {
+		//Temp object to push
+		var supRef = {
+			"sys_id":"",
+			"supply_type":""
+		};
+		//Fill temp obj with values from XML
+		supRef.sys_id = supplies[i].getAttribute("sys_id");
+		supRef.supply_type = supplies[i].getAttribute("supply_type");
+		supplyReferences.push(supRef);
+	}//End For
+	
+}
+
 function getCurrentDate() {
 	console.log("called me");
 	var date;
@@ -88,11 +124,9 @@ function getCurrentDate() {
 	ajax.getXML(function ()  {
 		date = ajax.getAnswer();	
 		console.log(date.toString());
-		
 	});
 	ajax.getXMLWait();
 	return date;
-	
 }]]></script>
         <script_name>angular_controller</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
@@ -100,7 +134,7 @@ function getCurrentDate() {
         <sys_created_on>2017-04-17 20:33:53</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>f46f26730f02b24012e4348ce1050e96</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>x_casus_printsmart.angular_controller</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -108,7 +142,7 @@ function getCurrentDate() {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_script_f46f26730f02b24012e4348ce1050e96</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-04-19 18:13:27</sys_updated_on>
+        <sys_updated_on>2017-04-19 20:37:56</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
