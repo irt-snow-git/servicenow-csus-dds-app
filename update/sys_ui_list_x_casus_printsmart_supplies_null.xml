@@ -118,10 +118,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 22:34:04</sys_created_on>
+            <sys_created_on>2017-04-19 17:32:26</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>283c0f426fa87a00ad6cd4a21c3ee403</sys_id>
+            <sys_id>9189946c0f1eb24012e4348ce1050e61</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_casus_printsmart_supplies</sys_name>
             <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -130,8 +130,8 @@
             <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
             <sys_update_name>sys_ui_list_x_casus_printsmart_supplies_null</sys_update_name>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 22:34:04</sys_updated_on>
-            <sys_user/>
+            <sys_updated_on>2017-04-19 17:32:26</sys_updated_on>
+            <sys_user display_value="Nicholas Myers">c44d0241fccff400afd74c548b802fc3</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

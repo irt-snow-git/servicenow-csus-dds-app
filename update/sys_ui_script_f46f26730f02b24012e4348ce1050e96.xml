@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_casus_printsmart.angular_controller</name>
+        <script><![CDATA[var myApp = angular.module('myApp', []);
+
+myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
+    
+	$scope.data = {};//Master object to hold data
+	$scope.max = 6;//Max number of data allowed
+	$scope.currentDate = new Date(getCurrentDate());//Date object of current date
+	
+	$scope.data.supply = [{
+		"supply_type": "",
+		"quantity_received": "",
+		"received_date": ""
+	}];
+	//Set default to current date
+	$scope.data.supply[0].received_date = $scope.currentDate;
+	
+	//This adds another panel for users to input additional data.
+	$scope.addAdditionalData = function () {
+		//Make sure we haven't maxxed out num of allowed data
+		if ($scope.data.supply.length < $scope.max) {
+			//Create blank data
+			var newSupply = { 
+				"supply_type": "",
+				"quantity_received": "",
+				"received_date": ""	
+			};
+			newSupply.received_date = $scope.currentDate;
+			$scope.data.supply.push(newSupply);
+			$scope.focusIndex = $scope.data.supply.length-1;//Used for auto focus field
+			return true;
+		} else {
+			//Too many data already added, can't add more
+			alert("Supply limit reached.");
+			return false;
+		}	
+	};
+	//This deletes the panel and it's information.
+	$scope.close = function(index) {
+		//Removes the data from array, thus removing the html elements
+		$scope.data.supply.splice(index,1);
+	};
+	
+	//Calls script include to submit records manually
+	$scope.submitAll = function () {
+		console.log($scope.data.supply);//Test
+		var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+		ajax.addParam('sysparm_name','submitRecord');
+		ajax.getXML(function ()  {
+			//var date = ajax.getAnswer();	
+			//console.log(ajax.getAnswer());
+		});
+	};
+	
+}])
+
+//This is used to autofocus the first field after dynamically adding a new obj
+//Place custom-autofocus html attribute into the desired field like so custom-autofocus="$index == focusIndex"
+//Must be used in ng-repeat
+.directive('customAutofocus', function() {
+  return{
+         restrict: 'A',
+
+         link: function(scope, element, attrs){
+           scope.$watch(function(){
+             return scope.$eval(attrs.customAutofocus);
+             },function (newValue){
+               if (newValue == true){
+                   element[0].focus();
+               }
+           });
+         }
+     };
+});
+//END Controller//
+
+function getCurrentDate() {
+	console.log("called me");
+	var date;
+	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+	ajax.addParam('sysparm_name','nowDateTime');
+	ajax.getXML(function ()  {
+		date = ajax.getAnswer();	
+		console.log(date.toString());
+		
+	});
+	ajax.getXMLWait();
+	return date;
+	
+}]]></script>
+        <script_name>angular_controller</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>gg622</sys_created_by>
+        <sys_created_on>2017-04-17 20:33:53</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f46f26730f02b24012e4348ce1050e96</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>x_casus_printsmart.angular_controller</sys_name>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sys_ui_script_f46f26730f02b24012e4348ce1050e96</sys_update_name>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-04-19 18:13:27</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
