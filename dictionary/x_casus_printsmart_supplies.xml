@@ -3,6 +3,7 @@
     <element label="Supply" max_length="40" name="x_casus_printsmart_supplies" type="collection">
         <element label="Additional Supplies Ordered" max_length="40" name="additional_supplies_ordered" type="boolean"/>
         <element default="0" label="Minimum Quantity" mandatory="true" max_length="10" name="minimum_quantity" type="integer"/>
+        <element label="Model" max_length="40" name="model" type="string"/>
         <element label="Nearing or Reached Min Quantity" max_length="40" name="nearing_min_quantity" type="boolean"/>
         <element label="Part Number" max_length="15" name="part_number" type="string"/>
         <element default="0" label="Supply Quantity" mandatory="true" max_length="15" name="supply_quantity" type="decimal"/>

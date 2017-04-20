@@ -9,21 +9,23 @@
         <action_name/>
         <action_query>false</action_query>
         <action_run_at>server</action_run_at>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <application/>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_casus_printsmart_supply_deliveries</collection>
+        <collection>x_casus_printsmart_supplies</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_casus_printsmart_supplies">supply_typeISNOTEMPTY^EQ<item endquery="false" field="supply_type" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Update Building Paper Level</name>
+        <name>Populate Supply Model on Insert</name>
         <onclick/>
         <order>100</order>
         <priority>100</priority>
@@ -36,38 +38,37 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	if(current.supply_type.getDisplayValue() == "Paper") {
-		var bldgLvl = new GlideRecord('x_casus_printsmart_building_paper_levels');
-		bldgLvl.addQuery("building", current.location);
-		bldgLvl.addActiveQuery();
-		bldgLvl.query();
-		bldgLvl.next();
-		
-		//if the record exists, update it
-		if(bldgLvl) {
-			bldgLvl.amount_of_cases_delivered += current.amount_of_boxes_delivered; //add to total building amount delivered
-			bldgLvl.update();
-			//gs.addInfoMessage(bldgLvl.building.getDisplayValue() + " paper delivered amount updated to " + bldgLvl.amount_of_cases_delivered);
-		}
+	// populate the 'model' field on the table with the first token of the supply_type string to allow for easy organization
+	
+	var supplyTypeStr = current.supply_type.split(' ');
+	
+	//model number will be first token of the string
+	//populate the model field as long as the model begins with a number
+	if(parseInt(supplyTypeStr[0])) {
+		current.model = supplyTypeStr[0];
+		current.update();
 	}
+	
+	//otherwise the user can just enter any string for the model
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
-        <sys_created_on>2017-01-27 18:03:35</sys_created_on>
+        <sys_created_on>2017-04-20 16:25:50</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>1b5c06020f687a0012e4348ce1050eac</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Update Building Paper Level</sys_name>
+        <sys_id>449355bc0fd2f24012e4348ce1050e20</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Populate Supply Model on Insert</sys_name>
         <sys_overrides/>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
-        <sys_update_name>sys_script_1b5c06020f687a0012e4348ce1050eac</sys_update_name>
+        <sys_update_name>sys_script_449355bc0fd2f24012e4348ce1050e20</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-04-20 19:01:02</sys_updated_on>
+        <sys_updated_on>2017-04-20 16:54:10</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
 </record_update>

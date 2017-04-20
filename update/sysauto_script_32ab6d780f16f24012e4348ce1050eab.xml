@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Rebuild PrintSmart Building Paper Levels List</name>
+        <run_as display_value="Nicholas Myers">c44d0241fccff400afd74c548b802fc3</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-04-20 18:09:49</run_start>
+        <run_time>1970-01-01 10:00:00</run_time>
+        <run_type>monthly</run_type>
+        <script><![CDATA[//create new records on table, copying values from old, active records
+//mark old records inactive
+
+//check end date of the record
+//if the end date is yesterday or before, continue
+var now = new GlideDate();
+
+//get any active building paper level record; entire active group should have the same start and end date
+var paperLev = new GlideRecord('x_casus_printsmart_building_paper_levels');
+paperLev.addActiveQuery();
+paperLev.query();
+
+if(paperLev.next()) {
+	if(paperLev.term_end_date < now) {
+		createNewBPLRecords();
+	}
+}
+
+function createNewBPLRecords() {
+
+	gs.info("Deactivating old PrintSmart Building levels.");
+	
+	//store new records in an array
+	//get any active building paper level record
+	var pprLev = new GlideRecord('x_casus_printsmart_building_paper_levels');
+	var newLev = new GlideRecord('x_casus_printsmart_building_paper_levels');
+	var newLevStorage = [];
+	
+	//set the dates for the fields
+	var date = gs.beginningOfThisMonth();
+	var firstDayOfMonth = new GlideDateTime(date);
+
+	var endDate = new GlideDateTime(firstDayOfMonth); //using this to use gdt functions, will be entered into a Date field, losing time
+	endDate.addMonthsLocalTime(2); //add two months to set term, and set date as last day of that month
+	
+	//now add 27 days to equal the 28th day (shortest possible month), check if last day of that month, if not, increase and check until it's the last day, then continue
+	endDate.addDaysLocalTime(27);
+	
+	//create temp date to get the amount of days in the end month
+	var tempDate = new GlideDateTime(endDate);
+	
+	//compare date of month with the amount of days in the month
+	while(endDate.getDayOfMonthLocalTime() != tempDate.getDaysInMonthLocalTime()) {
+		endDate.addDaysLocalTime(1);
+	}
+	
+	pprLev.addActiveQuery();
+	pprLev.query();
+
+	//find and copy the data from the existing record,
+	while(pprLev.next()) {
+
+		newLev.initialize();
+		
+		newLev.building = pprLev.building;
+		newLev.current_stock_level = pprLev.current_stock_level;
+		newLev.amount_of_cases_delivered = 0;
+		newLev.expected_stock_level = pprLev.expected_stock_level;
+		newLev.active = false; //make inactive to prevent extra returns from this query
+		newLev.term_start_date = firstDayOfMonth;
+		newLev.term_end_date = endDate;
+		//remaining stock is auto-calculated on insert
+		newLev.insert();
+
+		//deactivate this record, it's no longer needed
+		pprLev.active = false;
+		pprLev.update();
+
+		newLevStorage.push(newLev.sys_id.toString()); //add to list of sys_ids to activate after querying
+	}
+
+	//now that all of the previous term's records are inactive, activate what's in the array
+	for(var i = 0; i < newLevStorage.length; i++) {
+		var newLevels = new GlideRecord('x_casus_printsmart_building_paper_levels');
+		newLevels.get(newLevStorage[i]);
+
+		if(newLevels) {
+			newLevels.active = true;
+			newLevels.update();
+		}
+	}
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-04-20 18:59:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>32ab6d780f16f24012e4348ce1050eab</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Rebuild PrintSmart Building Paper Levels List</sys_name>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sysauto_script_32ab6d780f16f24012e4348ce1050eab</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-04-20 21:30:57</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

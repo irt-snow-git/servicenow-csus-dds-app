@@ -14,7 +14,8 @@ myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
 	$scope.data = {};//Master object to hold data
 	$scope.max = 6;//Max number of data allowed
 	$scope.currentDate = new Date(getCurrentDate());//Date object of current date
-	
+	$scope.async = 0;
+	$scope.suppliesAll = [];
 	$scope.data.supply = [{//Holds data that we will send to server for insert
 		"supply_type": "",
 		"quantity_received": "",
@@ -22,6 +23,11 @@ myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
 	}];
 	//Set default to current date
 	$scope.data.supply[0].received_date = $scope.currentDate;
+	$scope.suppliesAll = getSupplyReferences();
+	console.log("Sup 1 - " + supplyReferences[2].supply_type);
+	$scope.async = 1;
+	// - - - -End Init - - - -//
+	
 	
 	//This adds another panel for users to input additional data.
 	$scope.addAdditionalData = function () {
@@ -52,35 +58,30 @@ myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
 	//Calls script include to submit records manually
 	$scope.submitAll = function () {
 		console.log($scope.data.supply);//Test
+		var date = new Date($scope.data.supply[0].received_date);
+		console.log("MDAY - " + date);
 		var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
 		ajax.addParam('sysparm_name','submitRecord');
+		ajax.addParam('sysparm_supply_type', $scope.data.supply[0].supply_type);
+		ajax.addParam('sysparm_quantity_received', $scope.data.supply[0].quantity_received);
+		ajax.addParam('sysparm_received_date', $scope.data.supply[0].received_date);
 		ajax.getXML(function ()  {
 			//var date = ajax.getAnswer();	
 			//console.log(ajax.getAnswer());
 		});
 	};
-	
-		//Calls script include to submit records manually
-	$scope.getSupplyReferences = function () {
-		//console.log($scope.data.supply);//Test
-		var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
-		ajax.addParam('sysparm_name','getSupplyTableReferences');
-		console.log('LOL_K');
-		ajax.getXML(handleSupplyReferences);
-		ajax.getXMLWait();
-		//Now the supply references should have data (sys_id and supply_type)
-		console.log(supplyReferences);
-	};
+
 	//Actually sets the values in the controller
 	$scope.setSupplyReferences = function (supRefs) {
 			alert("test");
 	};
 	
-}])
+}])// - - -END Controller- - - //
 
-//This is used to autofocus the first field after dynamically adding a new obj
-//Place custom-autofocus html attribute into the desired field like so custom-autofocus="$index == focusIndex"
-//Must be used in ng-repeat
+/* This is used to autofocus the first field after dynamically adding a new obj
+Place custom-autofocus html attribute into the desired field like so custom-autofocus="$index == focusIndex"
+Must be used in ng-repeat
+*/
 .directive('customAutofocus', function() {
   return{
          restrict: 'A',
@@ -95,8 +96,25 @@ myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
            });
          }
      };
-});
-//END Controller//
+})//End Directive//
+
+/* Provides autopopulated dropdown menu. 
+*/
+.directive('customDropdown', function() {
+	return {
+		restrict: 'C',
+		template : 
+			'<datalist id="supplyList">' +
+			'<div ng-repeat="sup in suppliesAll track by $index">' +
+				'<option value="{{sup.sys_id}}">' + 
+			'</div>' +
+			'</datalist>'
+	};
+})//End Directive//
+
+;//- - - -End App- - - -//
+
+
 
 //Handles the XML call that retrieves supply sys_ids and supply_types
 //Assigns them to dat global supplyReferences 
@@ -115,15 +133,25 @@ function handleSupplyReferences(response) {
 	}//End For
 	
 }
+/*
+Uses a global variable to store all the supplies
+*/
+function getSupplyReferences() {
+	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+	ajax.addParam('sysparm_name','getSupplyTableReferences');
+	ajax.getXML(handleSupplyReferences);
+	ajax.getXMLWait();
+	//Now the supply references should have data (sys_id and supply_type)
+	console.log(supplyReferences);
+	return supplyReferences;
+}
 
 function getCurrentDate() {
-	console.log("called me");
 	var date;
 	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
 	ajax.addParam('sysparm_name','nowDateTime');
 	ajax.getXML(function ()  {
 		date = ajax.getAnswer();	
-		console.log(date.toString());
 	});
 	ajax.getXMLWait();
 	return date;
@@ -134,7 +162,7 @@ function getCurrentDate() {
         <sys_created_on>2017-04-17 20:33:53</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>f46f26730f02b24012e4348ce1050e96</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>102</sys_mod_count>
         <sys_name>x_casus_printsmart.angular_controller</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -142,7 +170,7 @@ function getCurrentDate() {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_script_f46f26730f02b24012e4348ce1050e96</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-04-19 20:37:56</sys_updated_on>
+        <sys_updated_on>2017-04-20 22:35:53</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
