@@ -82,12 +82,10 @@ myApp.controller('SuppliesReceived', ['$scope', function ($scope) {
 			ajax.addParam('sysparm_received_date', supDate);
 			ajax.getXML(function ()  {
 			});
-
-			
 		}//End outer for loop
-		
-
-
+		//Redirect user
+		var url = location.hostname;
+		window.location = url + 'x_casus_printsmart_supplies_received_list.do';
 	};
 
 	//Actually sets the values in the controller
@@ -173,7 +171,7 @@ function getCurrentDate() {
 		date = ajax.getAnswer();	
 	});
 	ajax.getXMLWait();
-	return date;
+	return date.replace(/-/g, '\/');
 }]]></script>
         <script_name>angular_controller</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
@@ -181,7 +179,7 @@ function getCurrentDate() {
         <sys_created_on>2017-04-17 20:33:53</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>f46f26730f02b24012e4348ce1050e96</sys_id>
-        <sys_mod_count>107</sys_mod_count>
+        <sys_mod_count>113</sys_mod_count>
         <sys_name>x_casus_printsmart.angular_controller</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -189,7 +187,7 @@ function getCurrentDate() {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_script_f46f26730f02b24012e4348ce1050e96</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-04-20 23:41:37</sys_updated_on>
+        <sys_updated_on>2017-04-21 20:30:38</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
