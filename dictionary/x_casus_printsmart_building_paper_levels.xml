@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Building Paper Levels" max_length="40" name="x_casus_printsmart_building_paper_levels" type="collection">
+    <element label="Building Paper Level" max_length="40" name="x_casus_printsmart_building_paper_levels" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
         <element default="0" label="Amount of Cases Delivered" max_length="20" name="amount_of_cases_delivered" type="decimal"/>
         <element label="Building" mandatory="true" max_length="32" name="building" reference="cmn_location" type="reference"/>
         <element default="0" label="Current Stock Level" max_length="20" name="current_stock_level" type="decimal"/>

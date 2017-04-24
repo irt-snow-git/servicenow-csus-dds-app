@@ -55,7 +55,7 @@
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>0e6b0e646fff2600ad6cd4a21c3ee4ff</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Update Supply Amount on New Receipt</sys_name>
         <sys_overrides/>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -64,7 +64,7 @@
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_script_0e6b0e646fff2600ad6cd4a21c3ee4ff</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2016-12-16 20:15:28</sys_updated_on>
+        <sys_updated_on>2017-04-19 19:03:11</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

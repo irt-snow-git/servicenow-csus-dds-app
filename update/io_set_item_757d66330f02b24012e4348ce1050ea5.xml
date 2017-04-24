@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>8000</order>
+        <sc_cat_item display_value="Submit Supply Received">0bece2330f02b24012e4348ce1050e62</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>gg622</sys_created_by>
+        <sys_created_on>2017-04-17 20:23:22</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>757d66330f02b24012e4348ce1050ea5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AddSubmitButtonVarSet.Submit Supply Received</sys_name>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>io_set_item_757d66330f02b24012e4348ce1050ea5</sys_update_name>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-04-17 20:23:22</sys_updated_on>
+        <variable_set display_value="AddSubmitButtonVarSet">a5929f076f61b600ad6cd4a21c3ee42a</variable_set>
+    </io_set_item>
+</record_update>

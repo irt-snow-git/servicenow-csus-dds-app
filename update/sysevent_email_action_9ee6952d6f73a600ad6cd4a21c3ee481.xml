@@ -4,7 +4,8 @@
         <action_insert>false</action_insert>
         <action_update>true</action_update>
         <active>true</active>
-        <advanced_condition><![CDATA[//if the supply quantity is within 40% of the minimum quantity, send the notification
+        <advanced_condition><![CDATA[/*Code has been moved to Business Rule 'Mark Supplies Close to Minimum Quantity' 
+//if the supply quantity is within 40% of the minimum quantity, send the notification
 // the notification "Notify PrintSmart when at Min Quantity" will handle when count is 
 var amtRatio = current.supply_quantity / current.minimum_quantity; //percentage of remaining supplies
 
@@ -14,10 +15,10 @@ if(current.minimum_quantity == 0) { //if minimum is zero, then just notify btwn 
 	}
 } else if(amtRatio > 1 && amtRatio < 1.4) { //1.4 is 40% above, modify this line to change percentage for all items; will notify if 1 or below in other notification
 	answer = true;
-}]]></advanced_condition>
+}*/]]></advanced_condition>
         <affected_field_on_event/>
         <collection>x_casus_printsmart_supplies</collection>
-        <condition table="x_casus_printsmart_supplies">supply_quantityVALCHANGES^EQ<item endquery="false" field="supply_quantity" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        <condition table="x_casus_printsmart_supplies">nearing_min_quantityCHANGESTOtrue^EQ<item endquery="false" field="nearing_min_quantity" goto="false" newquery="false" operator="CHANGESTO" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>multipart/mixed</content_type>
@@ -63,7 +64,7 @@ if(current.minimum_quantity == 0) { //if minimum is zero, then just notify btwn 
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>9ee6952d6f73a600ad6cd4a21c3ee481</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Notify PrintSmart when Near Min Quantity</sys_name>
         <sys_overrides/>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -72,7 +73,7 @@ if(current.minimum_quantity == 0) { //if minimum is zero, then just notify btwn 
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sysevent_email_action_9ee6952d6f73a600ad6cd4a21c3ee481</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-01-03 21:34:52</sys_updated_on>
+        <sys_updated_on>2017-04-19 17:27:17</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

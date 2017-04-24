@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_casus_printsmart_building_paper_levels" version="2" view="rpt-tempx_casus_printsmart_building_paper_levelsnicholasmyers">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>building</element>
+            <list_id display_value="x_casus_printsmart_building_paper_levels" element="NULL" name="x_casus_printsmart_building_paper_levels" parent="NULL" relationship="NULL" sys_domain="global" view="783c4bf76f4a7240ad6cd4a21c3ee4e2">1acc4ff76f4a7240ad6cd4a21c3ee40d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-17 22:40:12</sys_created_on>
+            <sys_id>5ecc4ff76f4a7240ad6cd4a21c3ee40d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>current_stock_level</element>
+            <list_id display_value="x_casus_printsmart_building_paper_levels" element="NULL" name="x_casus_printsmart_building_paper_levels" parent="NULL" relationship="NULL" sys_domain="global" view="783c4bf76f4a7240ad6cd4a21c3ee4e2">1acc4ff76f4a7240ad6cd4a21c3ee40d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-17 22:40:12</sys_created_on>
+            <sys_id>decc4ff76f4a7240ad6cd4a21c3ee40d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>expected_stock_level</element>
+            <list_id display_value="x_casus_printsmart_building_paper_levels" element="NULL" name="x_casus_printsmart_building_paper_levels" parent="NULL" relationship="NULL" sys_domain="global" view="783c4bf76f4a7240ad6cd4a21c3ee4e2">1acc4ff76f4a7240ad6cd4a21c3ee40d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-17 22:40:12</sys_created_on>
+            <sys_id>52cc4ff76f4a7240ad6cd4a21c3ee40e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>amount_of_cases_delivered</element>
+            <list_id display_value="x_casus_printsmart_building_paper_levels" element="NULL" name="x_casus_printsmart_building_paper_levels" parent="NULL" relationship="NULL" sys_domain="global" view="783c4bf76f4a7240ad6cd4a21c3ee4e2">1acc4ff76f4a7240ad6cd4a21c3ee40d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-17 22:40:12</sys_created_on>
+            <sys_id>d2cc4ff76f4a7240ad6cd4a21c3ee40e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>remaining_stock_to_deliver</element>
+            <list_id display_value="x_casus_printsmart_building_paper_levels" element="NULL" name="x_casus_printsmart_building_paper_levels" parent="NULL" relationship="NULL" sys_domain="global" view="783c4bf76f4a7240ad6cd4a21c3ee4e2">1acc4ff76f4a7240ad6cd4a21c3ee40d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-17 22:40:12</sys_created_on>
+            <sys_id>56cc4ff76f4a7240ad6cd4a21c3ee40e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>term_start_date</element>
+            <list_id display_value="x_casus_printsmart_building_paper_levels" element="NULL" name="x_casus_printsmart_building_paper_levels" parent="NULL" relationship="NULL" sys_domain="global" view="783c4bf76f4a7240ad6cd4a21c3ee4e2">1acc4ff76f4a7240ad6cd4a21c3ee40d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-17 22:40:12</sys_created_on>
+            <sys_id>d6cc4ff76f4a7240ad6cd4a21c3ee40e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>term_end_date</element>
+            <list_id display_value="x_casus_printsmart_building_paper_levels" element="NULL" name="x_casus_printsmart_building_paper_levels" parent="NULL" relationship="NULL" sys_domain="global" view="783c4bf76f4a7240ad6cd4a21c3ee4e2">1acc4ff76f4a7240ad6cd4a21c3ee40d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-17 22:40:12</sys_created_on>
+            <sys_id>5acc4ff76f4a7240ad6cd4a21c3ee40e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:12</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_casus_printsmart_building_paper_levels</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-17 22:40:12</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>1acc4ff76f4a7240ad6cd4a21c3ee40d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:12</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt-tempx_casus_printsmart_building_paper_levelsnicholasmyers" name="rpt-tempx_casus_printsmart_building_paper_levelsnicholasmyers">783c4bf76f4a7240ad6cd4a21c3ee4e2</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
