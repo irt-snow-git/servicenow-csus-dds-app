@@ -6,7 +6,7 @@
         <sys_class_name>sys_report_users_groups</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-04-21 18:41:15</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>7c7c3e450f1ef24012e4348ce1050ea5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>7b5cb2810f1ef24012e4348ce1050e9b</sys_name>

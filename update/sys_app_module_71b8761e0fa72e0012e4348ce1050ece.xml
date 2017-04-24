@@ -7,7 +7,7 @@
         <content_page/>
         <device_type/>
         <filter table="x_casus_printsmart_supply_deliveries">deliveredONThis year@javascript:gs.beginningOfThisYear()@javascript:gs.endOfThisYear()^supply_type=8e008f8a6f687a00ad6cd4a21c3ee428^EQ<item endquery="false" field="delivered" goto="false" newquery="false" operator="ON" or="false" value="This year@javascript:gs.beginningOfThisYear()@javascript:gs.endOfThisYear()"/>
-            <item display_table="x_casus_printsmart_supplies" display_value="Paper" endquery="false" field="supply_type" goto="false" newquery="false" operator="=" or="false" value="8e008f8a6f687a00ad6cd4a21c3ee428"/>
+            <item endquery="false" field="supply_type" goto="false" newquery="false" operator="=" or="false" value="8e008f8a6f687a00ad6cd4a21c3ee428"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -28,7 +28,7 @@
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2016-12-09 22:45:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>71b8761e0fa72e0012e4348ce1050ece</sys_id>
         <sys_mod_count>10</sys_mod_count>

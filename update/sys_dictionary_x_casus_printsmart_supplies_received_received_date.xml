@@ -51,17 +51,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2016-12-15 23:06:54</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>10c6b1940f77a20012e4348ce1050e7b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4451db426f5a3640ad6cd4a21c3ee419</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Received Date</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_dictionary_x_casus_printsmart_supplies_received_received_date</sys_update_name>
-        <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2016-12-22 19:36:49</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-04-24 22:46:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

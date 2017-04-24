@@ -28,7 +28,7 @@
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-01-27 23:07:45</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>bc839f066fa87a00ad6cd4a21c3ee472</sys_id>
         <sys_mod_count>0</sys_mod_count>

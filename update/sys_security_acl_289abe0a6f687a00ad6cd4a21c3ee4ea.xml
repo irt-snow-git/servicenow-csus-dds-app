@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-01-27 21:17:04</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>289abe0a6f687a00ad6cd4a21c3ee4ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_casus_printsmart_supply_orders</sys_name>

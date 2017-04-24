@@ -14,7 +14,7 @@
         <sys_class_name>sys_ui_module</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2016-12-07 22:23:33</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>ddb060b10f2bea0012e4348ce1050e01</sys_id>
         <sys_mod_count>1</sys_mod_count>

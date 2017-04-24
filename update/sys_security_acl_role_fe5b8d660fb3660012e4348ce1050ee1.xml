@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2016-12-22 19:41:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>fe5b8d660fb3660012e4348ce1050ee1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_casus_printsmart_supplies.minimum_quantity.x_casus_printsmart.user</sys_name>
@@ -12,7 +12,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
-        <sys_security_acl display_value="x_casus_printsmart_supplies.minimum_quantity">257d90310f2bea0012e4348ce1050eca</sys_security_acl>
+        <sys_security_acl display_value="">257d90310f2bea0012e4348ce1050eca</sys_security_acl>
         <sys_update_name>sys_security_acl_role_fe5b8d660fb3660012e4348ce1050ee1</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
         <sys_updated_on>2016-12-22 19:41:17</sys_updated_on>

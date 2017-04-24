@@ -57,7 +57,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-01-23 21:59:15</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>aeadde746facf600ad6cd4a21c3ee4d8</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>Paper Delivered To</sys_name>

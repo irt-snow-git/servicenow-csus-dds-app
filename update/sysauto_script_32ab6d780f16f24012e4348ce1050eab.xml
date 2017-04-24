@@ -98,7 +98,7 @@ function createNewBPLRecords() {
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-04-20 18:59:02</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>32ab6d780f16f24012e4348ce1050eab</sys_id>
         <sys_mod_count>33</sys_mod_count>
         <sys_name>Rebuild PrintSmart Building Paper Levels List</sys_name>

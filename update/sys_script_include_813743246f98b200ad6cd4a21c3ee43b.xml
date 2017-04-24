@@ -23,7 +23,7 @@ RetrieveRemainingSupplyAmount.prototype = Object.extendsObject(global.AbstractAj
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-01-10 20:09:18</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>813743246f98b200ad6cd4a21c3ee43b</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>RetrieveRemainingSupplyAmount</sys_name>

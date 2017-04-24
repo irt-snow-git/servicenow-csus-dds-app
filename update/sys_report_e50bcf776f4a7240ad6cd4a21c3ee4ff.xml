@@ -85,7 +85,7 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-04-17 22:32:31</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e50bcf776f4a7240ad6cd4a21c3ee4ff</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Supplies Approaching or Reached Minimum Quantity</sys_name>

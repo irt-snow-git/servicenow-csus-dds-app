@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-01-27 16:54:19</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e76ef58a0f287a0012e4348ce1050ebf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_casus_printsmart_building_paper_levels</sys_name>

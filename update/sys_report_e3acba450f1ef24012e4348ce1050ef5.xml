@@ -84,7 +84,7 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-04-21 18:42:16</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e3acba450f1ef24012e4348ce1050ef5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Supplies Received by Month</sys_name>
