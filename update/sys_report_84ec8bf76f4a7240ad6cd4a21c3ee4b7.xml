@@ -2,7 +2,7 @@
 <record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
-        <aggregate>COUNT</aggregate>
+        <aggregate>SUM</aggregate>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -32,11 +32,12 @@
         <display_grid>false</display_grid>
         <donut_width_percent>50</donut_width_percent>
         <exp_report_attrs>true</exp_report_attrs>
-        <field/>
+        <field>building</field>
         <field_list>building,current_stock_level,expected_stock_level,amount_of_cases_delivered,remaining_stock_to_deliver,term_start_date,term_end_date</field_list>
-        <filter table="x_casus_printsmart_building_paper_levels">remaining_stock_to_deliver&gt;0^term_end_date&gt;=javascript:gs.beginningOfThisMonth()^EQ<item endquery="false" field="remaining_stock_to_deliver" goto="false" newquery="false" operator="&gt;" or="false" value="0"/>
-            <item endquery="false" field="term_end_date" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfThisMonth()"/>
+        <filter table="x_casus_printsmart_building_paper_levels">active=true^remaining_stock_to_deliver&gt;0^EQ^GROUPBYbuilding<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="remaining_stock_to_deliver" goto="false" newquery="false" operator="&gt;" or="false" value="0"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="building"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -59,8 +60,8 @@
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
         <orderby_list/>
-        <other_threshold>-2</other_threshold>
-        <others>true</others>
+        <other_threshold>-1</other_threshold>
+        <others>false</others>
         <page_hdrftr display_value="Default">0ecdb03fc3613000cef73b251eba8f5e</page_hdrftr>
         <report_drilldown/>
         <report_source/>
@@ -71,24 +72,24 @@
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
-        <set_color>one_color</set_color>
+        <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
         <show_empty>false</show_empty>
         <show_geographical_label>false</show_geographical_label>
-        <show_legend>true</show_legend>
+        <show_legend>false</show_legend>
         <show_legend_border>false</show_legend_border>
         <show_marker>true</show_marker>
         <show_zero>false</show_zero>
-        <sumfield>amount_of_cases_delivered</sumfield>
+        <sumfield>remaining_stock_to_deliver</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-04-17 22:40:36</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>84ec8bf76f4a7240ad6cd4a21c3ee4b7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>This Month's Remaining Paper Deliveries</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -96,14 +97,14 @@
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_report_84ec8bf76f4a7240ad6cd4a21c3ee4b7</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-04-19 19:05:43</sys_updated_on>
+        <sys_updated_on>2017-04-24 22:34:07</sys_updated_on>
         <table>x_casus_printsmart_building_paper_levels</table>
         <title>This Month's Remaining Paper Deliveries</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>building...</trend_field>
-        <type>list</type>
+        <trend_field/>
+        <type>bar</type>
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>
         <use_color_palette>true</use_color_palette>
@@ -117,7 +118,7 @@
         <x_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_label_color>
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_opposite>false</x_axis_opposite>
-        <x_axis_title/>
+        <x_axis_title>Building</x_axis_title>
         <x_axis_title_bold>true</x_axis_title_bold>
         <x_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_title_color>
         <x_axis_title_size>12</x_axis_title_size>
@@ -130,7 +131,7 @@
         <y_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_label_color>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_opposite>false</y_axis_opposite>
-        <y_axis_title/>
+        <y_axis_title>Remaining Stock to Deliver</y_axis_title>
         <y_axis_title_bold>true</y_axis_title_bold>
         <y_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_title_color>
         <y_axis_title_size>12</y_axis_title_size>
