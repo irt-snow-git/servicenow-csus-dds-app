@@ -4,92 +4,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>active</element>
-            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c889db866fa87a00ad6cd4a21c3ee48d</list_id>
+            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5bb5f2960f56764012e4348ce1050e83</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:32:12</sys_created_on>
-            <sys_id>0089db866fa87a00ad6cd4a21c3ee48e</sys_id>
+            <sys_created_on>2017-04-25 15:24:20</sys_created_on>
+            <sys_id>5fb5f2960f56764012e4348ce1050e83</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:32:12</sys_updated_on>
+            <sys_updated_on>2017-04-25 15:24:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>supply_type</element>
-            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c889db866fa87a00ad6cd4a21c3ee48d</list_id>
+            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5bb5f2960f56764012e4348ce1050e83</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:32:12</sys_created_on>
-            <sys_id>8089db866fa87a00ad6cd4a21c3ee48e</sys_id>
+            <sys_created_on>2017-04-25 15:24:20</sys_created_on>
+            <sys_id>dfb5f2960f56764012e4348ce1050e83</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:32:12</sys_updated_on>
+            <sys_updated_on>2017-04-25 15:24:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>amount_ordered</element>
-            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c889db866fa87a00ad6cd4a21c3ee48d</list_id>
+            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5bb5f2960f56764012e4348ce1050e83</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:32:12</sys_created_on>
-            <sys_id>0489db866fa87a00ad6cd4a21c3ee48e</sys_id>
+            <sys_created_on>2017-04-25 15:24:20</sys_created_on>
+            <sys_id>53b5f2960f56764012e4348ce1050e84</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:32:12</sys_updated_on>
+            <sys_updated_on>2017-04-25 15:24:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>received</element>
-            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c889db866fa87a00ad6cd4a21c3ee48d</list_id>
+            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5bb5f2960f56764012e4348ce1050e83</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:32:12</sys_created_on>
-            <sys_id>8489db866fa87a00ad6cd4a21c3ee48e</sys_id>
+            <sys_created_on>2017-04-25 15:24:20</sys_created_on>
+            <sys_id>d3b5f2960f56764012e4348ce1050e84</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:32:12</sys_updated_on>
+            <sys_updated_on>2017-04-25 15:24:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>ordered</element>
-            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c889db866fa87a00ad6cd4a21c3ee48d</list_id>
+            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5bb5f2960f56764012e4348ce1050e83</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:32:12</sys_created_on>
-            <sys_id>0889db866fa87a00ad6cd4a21c3ee48e</sys_id>
+            <sys_created_on>2017-04-25 15:24:20</sys_created_on>
+            <sys_id>57b5f2960f56764012e4348ce1050e84</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:32:12</sys_updated_on>
+            <sys_updated_on>2017-04-25 15:24:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>date_received</element>
-            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c889db866fa87a00ad6cd4a21c3ee48d</list_id>
+            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5bb5f2960f56764012e4348ce1050e83</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:32:12</sys_created_on>
-            <sys_id>8889db866fa87a00ad6cd4a21c3ee48e</sys_id>
+            <sys_created_on>2017-04-25 15:24:20</sys_created_on>
+            <sys_id>d7b5f2960f56764012e4348ce1050e84</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:32:12</sys_updated_on>
+            <sys_updated_on>2017-04-25 15:24:20</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_casus_printsmart_supply_orders" element="NULL" name="x_casus_printsmart_supply_orders" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5bb5f2960f56764012e4348ce1050e83</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-25 15:24:20</sys_created_on>
+            <sys_id>5bb5f2960f56764012e4348ce1050e84</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-25 15:24:20</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -103,10 +118,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:32:12</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_on>2017-04-25 15:24:20</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>c889db866fa87a00ad6cd4a21c3ee48d</sys_id>
+            <sys_id>5bb5f2960f56764012e4348ce1050e83</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_casus_printsmart_supply_orders</sys_name>
             <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -115,7 +130,7 @@
             <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
             <sys_update_name>sys_ui_list_x_casus_printsmart_supply_orders_null</sys_update_name>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:32:12</sys_updated_on>
+            <sys_updated_on>2017-04-25 15:24:20</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
