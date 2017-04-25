@@ -10,6 +10,21 @@
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-20 17:25:07</sys_created_on>
+            <sys_id>7761a9f00f16f24012e4348ce1050ee2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-25 20:39:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>supply_type</element>
+            <list_id display_value="x_casus_printsmart_supplies_received" element="NULL" name="x_casus_printsmart_supplies_received" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8795f2960f56764012e4348ce1050ef0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
             <sys_created_on>2017-04-25 15:23:46</sys_created_on>
             <sys_id>8b95f2960f56764012e4348ce1050ef0</sys_id>
             <sys_mod_count>0</sys_mod_count>
@@ -30,6 +45,36 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>nicholasmyers</sys_updated_by>
             <sys_updated_on>2017-04-25 15:23:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>quantity_received</element>
+            <list_id display_value="x_casus_printsmart_supplies_received" element="NULL" name="x_casus_printsmart_supplies_received" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8795f2960f56764012e4348ce1050ef0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-20 17:25:07</sys_created_on>
+            <sys_id>f761a9f00f16f24012e4348ce1050ee2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-25 20:39:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>received_date</element>
+            <list_id display_value="x_casus_printsmart_supplies_received" element="NULL" name="x_casus_printsmart_supplies_received" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8795f2960f56764012e4348ce1050ef0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-20 17:25:07</sys_created_on>
+            <sys_id>7b61a9f00f16f24012e4348ce1050ee2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-25 20:39:51</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -60,6 +105,21 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>nicholasmyers</sys_updated_by>
             <sys_updated_on>2017-04-25 15:23:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_casus_printsmart_supplies_received" element="NULL" name="x_casus_printsmart_supplies_received" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8795f2960f56764012e4348ce1050ef0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-20 17:25:07</sys_created_on>
+            <sys_id>fb61a9f00f16f24012e4348ce1050ee2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-25 20:39:51</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>

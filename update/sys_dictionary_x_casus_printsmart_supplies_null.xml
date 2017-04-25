@@ -52,14 +52,14 @@
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2016-12-07 21:57:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>93419b426f5a3640ad6cd4a21c3ee4ee</sys_id>
+        <sys_id>bfaad8bd0fe7ea0012e4348ce1050eaa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_casus_printsmart_supplies</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
-        <sys_update_name>sys_dictionary_x_casus_printsmart_supplies_NULL</sys_update_name>
+        <sys_update_name>sys_dictionary_x_casus_printsmart_supplies_null</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
         <sys_updated_on>2017-04-24 22:46:36</sys_updated_on>
         <table_reference>false</table_reference>
