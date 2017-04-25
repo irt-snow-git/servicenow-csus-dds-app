@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>02339f066f5a3640ad6cd4a21c3ee485</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_casus_printsmart_building_paper_levels">
+    <x_casus_printsmart_building_paper_levels action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <amount_of_cases_delivered>1</amount_of_cases_delivered>
+        <building display_value="Academic Information Resource Center">a62390fd0a0a3c9e01c345419a0cedf1</building>
+        <current_stock_level>0</current_stock_level>
+        <expected_stock_level>5</expected_stock_level>
+        <remaining_stock_to_deliver>4</remaining_stock_to_deliver>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-04-24 22:55:09</sys_created_on>
+        <sys_id>02339f066f5a3640ad6cd4a21c3ee485</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-04-24 22:55:09</sys_updated_on>
+        <term_end_date>2017-06-30</term_end_date>
+        <term_start_date>2017-04-01</term_start_date>
+    </x_casus_printsmart_building_paper_levels>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-04-25 18:16:17</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1e1d171a0f96764012e4348ce1050e96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 04-24-2017 15:55:09</sys_name>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sys_metadata_link_1e1d171a0f96764012e4348ce1050e96</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-04-25 18:16:17</sys_updated_on>
+        <tablename>x_casus_printsmart_building_paper_levels</tablename>
+    </sys_metadata_link>
+</record_update>

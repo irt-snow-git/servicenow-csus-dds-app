@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>58a61b866f5a3640ad6cd4a21c3ee499</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_casus_printsmart_supplies">
+    <x_casus_printsmart_supplies action="INSERT_OR_UPDATE">
+        <additional_supplies_ordered>false</additional_supplies_ordered>
+        <minimum_quantity>10</minimum_quantity>
+        <model>6655</model>
+        <nearing_min_quantity>false</nearing_min_quantity>
+        <part_number>106R02747</part_number>
+        <supply_quantity>23</supply_quantity>
+        <supply_type>6655 Black  Toner</supply_type>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-04-24 23:09:32</sys_created_on>
+        <sys_id>58a61b866f5a3640ad6cd4a21c3ee499</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-04-24 23:11:53</sys_updated_on>
+    </x_casus_printsmart_supplies>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-04-25 18:15:30</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>aeec1f1a0f96764012e4348ce1050e60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6655 Black  Toner</sys_name>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sys_metadata_link_aeec1f1a0f96764012e4348ce1050e60</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-04-25 18:15:30</sys_updated_on>
+        <tablename>x_casus_printsmart_supplies</tablename>
+    </sys_metadata_link>
+</record_update>
