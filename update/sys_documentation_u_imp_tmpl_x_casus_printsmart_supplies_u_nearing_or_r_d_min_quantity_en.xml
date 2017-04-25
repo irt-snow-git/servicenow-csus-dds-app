@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_nearing_or_r_d_min_quantity" label="Nearing or Reached Min Quantity" language="en" table="u_imp_tmpl_x_casus_printsmart_supplies">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_nearing_or_r_d_min_quantity</element>
+            <help/>
+            <hint/>
+            <label>Nearing or Reached Min Quantity</label>
+            <language>en</language>
+            <name>u_imp_tmpl_x_casus_printsmart_supplies</name>
+            <plural>Nearing or Reached Min Quantities</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-25 20:52:35</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>f3d044a60fd6764012e4348ce1050eb4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Nearing or Reached Min Quantity</sys_name>
+            <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+            <sys_update_name>sys_documentation_u_imp_tmpl_x_casus_printsmart_supplies_u_nearing_or_r_d_min_quantity_en</sys_update_name>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-25 20:52:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

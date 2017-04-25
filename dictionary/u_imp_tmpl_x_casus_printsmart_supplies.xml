@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element extends="sys_import_set_row" label="Imp Tmpl X Casus Printsmart Supplies" max_length="40" name="u_imp_tmpl_x_casus_printsmart_supplies" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Additional Supplies Ordered" max_length="40" name="u_additional_supplies_ordered" type="string"/>
         <element attributes="import_attribute_name=Biweekly Count" label="Biweekly Count" max_length="10" name="u_biweekly_count" type="decimal"/>
         <element attributes="import_attribute_name=Minimum Quantity" label="Minimum Quantity" max_length="10" name="u_minimum_quantity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nearing or Reached Min Quantity" max_length="40" name="u_nearing_or_r_d_min_quantity" type="string"/>
         <element attributes="import_attribute_name=Part Number,edge_encryption_enabled=true" label="Part Number" max_length="15" name="u_part_number" type="string"/>
         <element attributes="import_attribute_name=Supply Quantity" label="Supply Quantity" max_length="15" name="u_supply_quantity" type="decimal"/>
         <element attributes="import_attribute_name=Supply Type,edge_encryption_enabled=true" label="Supply Type" max_length="40" name="u_supply_type" type="string"/>

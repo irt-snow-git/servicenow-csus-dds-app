@@ -6,7 +6,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd hh:mm:ss</date_format>
-        <map display_value="u_imp_tmpl_x_casus_printsmart_supplies">08a61b866f5a3640ad6cd4a21c3ee471</map>
+        <map/>
         <reference_value_field/>
         <source_field>u_supply_quantity</source_field>
         <source_script>answer = (function transformEntry(source) {
