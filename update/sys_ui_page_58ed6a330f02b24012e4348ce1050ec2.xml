@@ -2,7 +2,32 @@
 <record_update table="sys_ui_page">
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
-        <client_script/>
+        <client_script><![CDATA[function test() {
+	alert("yo");
+}
+
+/*_________________________________________________________________
+   * Description: Hides all controller divs, turns off style on nav pills, then activiates
+		   the clicked element along with the corrosponding controller div (DOM MANIPULATION)
+   * Parameters: @active_div (string): name of div to activate
+			   @list_element - element of the nav pill (li element) to show active
+   ________________________________________________________________*/
+function setActive(active_div, list_element) {
+	//Hide all divs
+	gel('supply_order_div').style.display = "none";
+	gel('supply_receive_div').style.display = "none";
+	//gel('supply_delivery_div').style.display = "none";
+	
+	//Set clicked controller div to active
+	gel(active_div).style.display = "block";
+	
+	//Remove class from all nav pills
+	gel('supply_receive_li').className = "";
+	gel('supply_order_li').className = "";
+	gel('supply_delivery_li').className = "";
+	//Set clicked nav pill to active
+	list_element.className = "active";
+}]]></client_script>
         <description>Displays mutiple fields to allow the user to submit multiple Supplies Received records to the Supplies Received table, without having to continually reload the page. </description>
         <direct>false</direct>
         <endpoint>x_casus_printsmart_submit_supplies_received.do</endpoint>
@@ -33,21 +58,23 @@
 <!-- References-->
 <div class="row col-md-10" id="supply-div" style="padding:50px;">
 	<div>
+
 			<ul class="nav nav-pills">
-				<li class="active">
-					<a href="#">Home</a>
+				<li class="active" onclick="setActive('supply_receive_div', this)" id="supply_receive_li">
+					<a href="#" >Supply Received</a>
 				</li>
-				<li>
-					<a href="#">SupplyME</a>
+				<li onclick="setActive('supply_order_div', this)" id="supply_order_li">
+					<a href="#">Supply Order</a>
 				</li>
-				<li>
-					<a href="#">WOOT</a>
+				<li onclick="setActive('supply_delivery_div',this)" id="supply_delivery_li">
+					<a href="#">Supply Delivered</a>
 				</li>
 			</ul>
+		<div ng-controller="SuppliesReceived" id="supply_receive_div">
+
 			<h1>Supplies Received</h1>
 			<p>Submit supplies received below.</p>
 
-			<div ng-controller="SuppliesReceived">
 			<!-- Repeats based on amount of data -->
 				<div ng-repeat="sup in data.supply track by $index">
 					<div class="col-md-12 col-sm-12">
@@ -87,7 +114,55 @@
 					<input type="hidden" id="data_all" value=" {{data.supply}}"/>
 				</div>
 
-			</div>
+
+		</div> <!-- END Supplies Received Controller-->
+		
+		<div ng-controller="SuppliesOrdered" id="supply_order_div">
+
+			<h1>Supplies Ordered</h1>
+			<p>Submit supplies ordered below.</p>
+
+			<!-- Repeats based on amount of data -->
+				<div ng-repeat="sup in data.supply track by $index">
+					<div class="col-md-12 col-sm-12">
+					<div class="panel panel-default">
+						<button type="button" aria-label="Close" ng-click="close($index)" class="btn btn-close pull-right">
+							<span aria-hidden="true">x</span>
+						</button>
+						<div class="panel-heading">
+							<h3 class="panel-title">Supply ordered</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<label for="supType">Supply type</label>
+									<input class="form-control" list="supplyList" id="supType" ng-if="async == 1" placeholder="Type name or model number" ng-model="sup.supply_type" custom-autofocus="$index == focusIndex"/>
+									<div class="customDropdown"></div>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<label for="supQuantity">Quantity</label>
+									<input type="number" ng-model="sup.quantity_received" class="form-control" id="supQuantity"/>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									<label for="supDate">Date received</label>
+									<input type="date" ng-model="sup.received_date" class="form-control" id="supDate"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			<!-- End Repeat -->
+				<div class="row" style="padding-left:30px;">
+					<button class="btn-secondary" ng-click="addAdditionalData()"> Add Additional Supply Received </button>
+					<button class="btn-submit" ng-click="submitAll()"> Submit All </button>
+				</div>
+				<div class="row">
+					<input type="hidden" id="data_all" value=" {{data.supply}}"/>
+				</div>
+
+
+		</div> <!-- END Controller-->
 	</div><!-- END Navbar -->
 	</div>
 </div>
@@ -99,7 +174,7 @@
         <sys_created_on>2017-04-17 20:26:44</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>58ed6a330f02b24012e4348ce1050ec2</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>submit_supplies_received</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -107,6 +182,6 @@
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_page_58ed6a330f02b24012e4348ce1050ec2</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-04-25 21:48:59</sys_updated_on>
+        <sys_updated_on>2017-04-25 23:24:44</sys_updated_on>
     </sys_ui_page>
 </record_update>
