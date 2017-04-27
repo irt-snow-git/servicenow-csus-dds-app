@@ -14,7 +14,7 @@ submitMultiple.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
 	},
 	
-	submitRecord: function() {
+	submitSupplyReceived: function() {
 		
 		var gr = new GlideRecord('x_casus_printsmart_supplies_received');
 		gr.initialize(); 
@@ -24,6 +24,32 @@ submitMultiple.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var date = new GlideDate();
 		date.setValue(this.getParameter('sysparm_received_date'));
 		gr.received_date = date;
+		gr.insert();
+		return true;
+	},
+	
+	submitSupplyOrder: function() {
+		
+		var gr = new GlideRecord('x_casus_printsmart_supply_orders');
+		gr.initialize(); 
+		gr.supply_type = this.getParameter('sysparm_supply_type'); //sys_id
+		gr.amount_ordered = this.getParameter('sysparm_amount_ordered'); //int
+		var date = new GlideDate();
+		date.setValue(this.getParameter('sysparm_ordered'));
+		gr.ordered = date;
+		gr.insert();
+		return true;
+	},
+	
+	submitSupplyDelivery: function() {
+		
+		var gr = new GlideRecord('x_casus_printsmart_supply_orders');
+		gr.initialize(); 
+		gr.supply_type = this.getParameter('sysparm_supply_type'); //sys_id
+		gr.amount_of_boxes_delivered = this.getParameter('sysparm_amount_of_boxes_delivered'); //int
+		var date = new GlideDate();
+		date.setValue(this.getParameter('sysparm_delivered'));
+		gr.delivered = date;
 		gr.insert();
 		return true;
 	},
@@ -44,9 +70,9 @@ submitMultiple.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-04-18 22:11:17</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>78be44d46f52b240ad6cd4a21c3ee475</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>submitMultiple</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy>read</sys_policy>
@@ -54,6 +80,6 @@ submitMultiple.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_script_include_78be44d46f52b240ad6cd4a21c3ee475</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-04-20 22:55:48</sys_updated_on>
+        <sys_updated_on>2017-04-27 21:43:32</sys_updated_on>
     </sys_script_include>
 </record_update>

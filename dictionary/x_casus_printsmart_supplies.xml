@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Supply" max_length="40" name="x_casus_printsmart_supplies" type="collection">
+    <element attributes="live_feed=false" audit="true" label="Supply" max_length="40" name="x_casus_printsmart_supplies" type="collection">
         <element label="Additional Supplies Ordered" max_length="40" name="additional_supplies_ordered" type="boolean"/>
         <element default="0" label="Minimum Quantity" mandatory="true" max_length="10" name="minimum_quantity" type="integer"/>
         <element label="Model" max_length="40" name="model" type="string"/>

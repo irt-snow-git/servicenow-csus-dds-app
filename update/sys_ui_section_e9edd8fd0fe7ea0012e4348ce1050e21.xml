@@ -5,13 +5,13 @@
             <element>supply_type</element>
             <position>0</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-04-20 16:49:54</sys_created_on>
-            <sys_id>4c6991300f16f24012e4348ce1050e5a</sys_id>
+            <sys_created_on>2017-04-26 22:41:11</sys_created_on>
+            <sys_id>a05325726fd67640ad6cd4a21c3ee45e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supplies" sys_domain="global" view="Default view">e9edd8fd0fe7ea0012e4348ce1050e21</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-04-20 16:49:54</sys_updated_on>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>part_number</element>
             <position>1</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-04-20 16:49:54</sys_created_on>
-            <sys_id>cc6991300f16f24012e4348ce1050e5a</sys_id>
+            <sys_created_on>2017-04-26 22:41:11</sys_created_on>
+            <sys_id>245325726fd67640ad6cd4a21c3ee45e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supplies" sys_domain="global" view="Default view">e9edd8fd0fe7ea0012e4348ce1050e21</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-04-20 16:49:54</sys_updated_on>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-04-20 16:49:54</sys_created_on>
-            <sys_id>406991300f16f24012e4348ce1050e5b</sys_id>
+            <sys_created_on>2017-04-26 22:41:11</sys_created_on>
+            <sys_id>a45325726fd67640ad6cd4a21c3ee45e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supplies" sys_domain="global" view="Default view">e9edd8fd0fe7ea0012e4348ce1050e21</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-04-20 16:49:54</sys_updated_on>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>minimum_quantity</element>
             <position>3</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-04-20 16:49:54</sys_created_on>
-            <sys_id>c06991300f16f24012e4348ce1050e5b</sys_id>
+            <sys_created_on>2017-04-26 22:41:11</sys_created_on>
+            <sys_id>285325726fd67640ad6cd4a21c3ee45e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supplies" sys_domain="global" view="Default view">e9edd8fd0fe7ea0012e4348ce1050e21</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-04-20 16:49:54</sys_updated_on>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>supply_quantity</element>
             <position>4</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-04-20 16:49:54</sys_created_on>
-            <sys_id>446991300f16f24012e4348ce1050e5b</sys_id>
+            <sys_created_on>2017-04-26 22:41:11</sys_created_on>
+            <sys_id>a85325726fd67640ad6cd4a21c3ee45e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supplies" sys_domain="global" view="Default view">e9edd8fd0fe7ea0012e4348ce1050e21</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-04-20 16:49:54</sys_updated_on>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>.end_split</element>
             <position>5</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-04-20 16:49:54</sys_created_on>
-            <sys_id>c46991300f16f24012e4348ce1050e5b</sys_id>
+            <sys_created_on>2017-04-26 22:41:11</sys_created_on>
+            <sys_id>2c5325726fd67640ad6cd4a21c3ee45e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supplies" sys_domain="global" view="Default view">e9edd8fd0fe7ea0012e4348ce1050e21</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-04-20 16:49:54</sys_updated_on>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -89,15 +89,29 @@
             <element>additional_supplies_ordered</element>
             <position>6</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-04-20 16:49:54</sys_created_on>
-            <sys_id>486991300f16f24012e4348ce1050e5b</sys_id>
+            <sys_created_on>2017-04-26 22:41:11</sys_created_on>
+            <sys_id>ac5325726fd67640ad6cd4a21c3ee45e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supplies" sys_domain="global" view="Default view">e9edd8fd0fe7ea0012e4348ce1050e21</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-04-20 16:49:54</sys_updated_on>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>7</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-04-26 22:41:11</sys_created_on>
+            <sys_id>205325726fd67640ad6cd4a21c3ee45f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Supply Activity">db1369726fd67640ad6cd4a21c3ee473</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supplies" sys_domain="global" view="Default view">e9edd8fd0fe7ea0012e4348ce1050e21</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
@@ -110,7 +124,7 @@
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>e9edd8fd0fe7ea0012e4348ce1050e21</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>7</sys_mod_count>
             <sys_name>x_casus_printsmart_supplies</sys_name>
             <sys_overrides display_value="">global</sys_overrides>
             <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -119,7 +133,7 @@
             <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
             <sys_update_name>sys_ui_section_e9edd8fd0fe7ea0012e4348ce1050e21</sys_update_name>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-04-25 20:31:07</sys_updated_on>
+            <sys_updated_on>2017-04-26 22:41:11</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>
