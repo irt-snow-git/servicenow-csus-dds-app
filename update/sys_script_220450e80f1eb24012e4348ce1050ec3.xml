@@ -40,13 +40,17 @@
 
 	// if the supply quantity is within 40% of the minimum quantity, send the notification
 	// the notification "Notify PrintSmart when at Min Quantity" will handle when count is 
-	var amtRatio = current.supply_quantity / current.minimum_quantity; //percentage of remaining supplies
+	var amtRatio; //ratio of remaining supplies to minimum quantity
+	
+	if(current.minimum_quantity != 0) {
+		amtRatio = current.supply_quantity / current.minimum_quantity; //percentage of remaining supplies
+	}
 
-	if(current.minimum_quantity == 0) { //if minimum is zero, then just notify btwn 2 and 1
-		if(current.supply_quantity <= 2 && current.supply_quantity >= 1) {
+	if(current.minimum_quantity == 0) { //if minimum is zero, then just notify when updated to less than two
+		if(current.supply_quantity <= 2) {
 			current.nearing_min_quantity = true;
 		}
-	} else if(amtRatio > 1 && amtRatio < 1.4) { //1.4 is 40% above, modify this line to change percentage for all items; will notify if 1 or below in other notification
+	} else if(amtRatio < 1.4) { //1.4 is 40% above, modify this line to change percentage for all items; will notify if 1 or below in other notification
 		current.nearing_min_quantity = true;
 	} else {
 		current.nearing_min_quantity = false;
@@ -58,10 +62,10 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-04-19 17:24:01</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>220450e80f1eb24012e4348ce1050ec3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Mark Supplies Close to Minimum Quantity</sys_name>
         <sys_overrides/>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -70,7 +74,7 @@
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_script_220450e80f1eb24012e4348ce1050ec3</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-04-19 17:29:35</sys_updated_on>
+        <sys_updated_on>2017-04-28 16:13:24</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
