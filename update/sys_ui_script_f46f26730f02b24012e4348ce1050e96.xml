@@ -41,7 +41,6 @@ myApp.factory('suppliesFactory', function() {
 	$scope.data.supply[0].received_date = $scope.currentDate;
 	$scope.suppliesAll = supplyReferences;//getSupplyReferences();
 	$scope.async = 1;
-	console.log($scope.suppliesAll);
 	// - - - -End Init - - - -//
 	
 	
@@ -361,7 +360,7 @@ function getCurrentDate() {
         <sys_created_on>2017-04-17 20:33:53</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>f46f26730f02b24012e4348ce1050e96</sys_id>
-        <sys_mod_count>146</sys_mod_count>
+        <sys_mod_count>147</sys_mod_count>
         <sys_name>x_casus_printsmart.angular_controller</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -369,7 +368,7 @@ function getCurrentDate() {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_script_f46f26730f02b24012e4348ce1050e96</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-03 19:54:56</sys_updated_on>
+        <sys_updated_on>2017-05-03 20:14:46</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
