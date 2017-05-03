@@ -6,8 +6,8 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_casus_printsmart_supply_deliveries">deliveredONThis year@javascript:gs.beginningOfThisYear()@javascript:gs.endOfThisYear()^supply_type=8e008f8a6f687a00ad6cd4a21c3ee428^EQ<item endquery="false" field="delivered" goto="false" newquery="false" operator="ON" or="false" value="This year@javascript:gs.beginningOfThisYear()@javascript:gs.endOfThisYear()"/>
-            <item endquery="false" field="supply_type" goto="false" newquery="false" operator="=" or="false" value="8e008f8a6f687a00ad6cd4a21c3ee428"/>
+        <filter table="x_casus_printsmart_supply_deliveries">deliveredONThis year@javascript:gs.beginningOfThisYear()@javascript:gs.endOfThisYear()^supply_type.supply_type=Paper^EQ<item endquery="false" field="delivered" goto="false" newquery="false" operator="ON" or="false" value="This year@javascript:gs.beginningOfThisYear()@javascript:gs.endOfThisYear()"/>
+            <item endquery="false" field="supply_type.supply_type" goto="false" newquery="false" operator="=" or="false" value="Paper"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -28,10 +28,10 @@
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2016-12-09 22:45:17</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>71b8761e0fa72e0012e4348ce1050ece</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>This Year's Paper Deliveries</sys_name>
         <sys_overrides/>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -40,7 +40,7 @@
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_app_module_71b8761e0fa72e0012e4348ce1050ece</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-01-27 22:00:33</sys_updated_on>
+        <sys_updated_on>2017-05-01 18:28:37</sys_updated_on>
         <timeline_page/>
         <title>This Year's Paper Deliveries</title>
         <u_basic_module/>
