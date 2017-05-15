@@ -38,26 +38,29 @@
 
 	if(current.supply_type.getDisplayValue() == "Paper") {
 		var bldgLvl = new GlideRecord('x_casus_printsmart_building_paper_levels');
-		bldgLvl.addQuery("building", current.location);
+		
+		//use parent of the entered location to update the general building's delivered paper levels
+		//using the parent or building fields, as both appear to be used interchangeably
+		var bldgPrnt = bldgLvl.addQuery("building", current.location.u_building);
+			bldgPrnt.addOrCondition("building", current.location.parent);
+		
 		bldgLvl.addActiveQuery();
 		bldgLvl.query();
-		bldgLvl.next();
 		
 		//if the record exists, update it
-		if(bldgLvl) {
+		if(bldgLvl.next()) {
 			bldgLvl.amount_of_cases_delivered += current.amount_of_boxes_delivered; //add to total building amount delivered
 			bldgLvl.update();
-			//gs.addInfoMessage(bldgLvl.building.getDisplayValue() + " paper delivered amount updated to " + bldgLvl.amount_of_cases_delivered);
 		}
 	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-01-27 18:03:35</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>1b5c06020f687a0012e4348ce1050eac</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Update Building Paper Level</sys_name>
         <sys_overrides/>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -66,7 +69,7 @@
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_script_1b5c06020f687a0012e4348ce1050eac</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-04-20 19:01:02</sys_updated_on>
+        <sys_updated_on>2017-05-15 23:33:50</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
