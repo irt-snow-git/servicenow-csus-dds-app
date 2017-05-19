@@ -56,7 +56,7 @@ function setActive(active_div, list_element) {
 	
 <div ng-app="myApp">
 <!-- References-->
-<div class="row col-md-10" id="supply-div" style="padding:50px;">
+<div class="container full-height" id="supply-div" style="padding:50px;">
 	<div>
 
 			<ul class="nav nav-pills">
@@ -184,7 +184,7 @@ function setActive(active_div, list_element) {
 								<div class="form-group col-lg-4 col-md-3 col-sm-3 col-xs-12">
 									<label for="supLocation">Location</label>
 									<input class="form-control" list="locationList" id="supLocation" ng-if="async == 1" placeholder="Type location" ng-model="sup.location"/>
-									<div class="customDropdown"></div>
+									<div class="locationDropdown"></div>
 								</div>
 								<div class="form-group col-lg-2 col-md-3 col-sm-3 col-xs-12">
 									<label for="supQuantity">Amount of boxes</label>
@@ -220,7 +220,7 @@ function setActive(active_div, list_element) {
         <sys_created_on>2017-04-17 20:26:44</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>58ed6a330f02b24012e4348ce1050ec2</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>78</sys_mod_count>
         <sys_name>submit_supplies_received</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -228,6 +228,6 @@ function setActive(active_div, list_element) {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_page_58ed6a330f02b24012e4348ce1050ec2</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-04-27 21:50:05</sys_updated_on>
+        <sys_updated_on>2017-05-19 22:47:06</sys_updated_on>
     </sys_ui_page>
 </record_update>

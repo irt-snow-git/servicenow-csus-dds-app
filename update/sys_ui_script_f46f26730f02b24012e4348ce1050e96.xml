@@ -7,7 +7,9 @@
         <name>x_casus_printsmart.angular_controller</name>
         <script><![CDATA[var myApp = angular.module('myApp', []);
 var supplyReferences = [];  //Holds all supplies (Global)
+var locationReferences = [];//Holds all location references (Global)
 supplyReferences = getSupplyReferences();
+locationReferences = getLocationReferences();
 
 
 // - - - Begin Factory Service - - - //
@@ -39,7 +41,7 @@ myApp.factory('suppliesFactory', function() {
 	}];
 	//Set default to current date
 	$scope.data.supply[0].received_date = $scope.currentDate;
-	$scope.suppliesAll = supplyReferences;//getSupplyReferences();
+	$scope.suppliesAll = supplyReferences;
 	$scope.async = 1;
 	// - - - -End Init - - - -//
 	
@@ -72,7 +74,6 @@ myApp.factory('suppliesFactory', function() {
 	
 	//Calls script include to submit records manually
 	$scope.submitAll = function () {
-		console.log($scope.data.supply);//Test
 		//Loop through each data, call server to submit
 		for (var i = 0; i < $scope.data.supply.length; i++) {
 			var supType = $scope.data.supply[i].supply_type;
@@ -154,7 +155,6 @@ myApp.factory('suppliesFactory', function() {
 	
 	//Calls script include to submit records manually
 	$scope.submitAll = function () {
-		console.log($scope.data.supply);//Test
 		//Loop through each data, call server to submit
 		for (var i = 0; i < $scope.data.supply.length; i++) {
 			var supType = $scope.data.supply[i].supply_type;
@@ -196,6 +196,8 @@ myApp.factory('suppliesFactory', function() {
 	$scope.currentDate = new Date(getCurrentDate());//Date object of current date
 	$scope.async = 0;
 	$scope.suppliesAll = [];
+	$scope.locationsAll = [];
+
 	$scope.data.supply = [{//Holds data that we will send to server for insert
 		"supply_type": "",
 		"location": "",
@@ -204,7 +206,9 @@ myApp.factory('suppliesFactory', function() {
 	}];
 	//Set default to current date
 	$scope.data.supply[0].delivered = $scope.currentDate;
-	$scope.suppliesAll = supplyReferences;//getSupplyReferences();
+	$scope.suppliesAll = supplyReferences;
+	$scope.locationsAll = locationReferences;
+	console.log($scope.locationsAll);
 	$scope.async = 1;
 	// - - - -End Init - - - -//
 	
@@ -238,13 +242,12 @@ myApp.factory('suppliesFactory', function() {
 	
 	//Calls script include to submit records manually
 	$scope.submitAll = function () {
-		console.log($scope.data.supply);//Test
 		//Loop through each data, call server to submit
 		for (var i = 0; i < $scope.data.supply.length; i++) {
-			console.log(i);
 			var supType = $scope.data.supply[i].supply_type;
 			var supID;
-			var supLocation;//TODO
+			var supLocation = $scope.data.supply[i].location;
+			var locID;
 			var date = new Date($scope.data.supply[i].delivered);
 			var supDate = date.toISOString();
 			supDate = supDate.substr(0,10);//Get the first few characters, removing extra stuff
@@ -257,11 +260,19 @@ myApp.factory('suppliesFactory', function() {
 				}
 			}//End inner for loop
 			
+			//Loop for supplies looking for matching supply_type - Should be better way but oh well
+			for (var k = 0; k < $scope.locationsAll.length; k++) {
+				if (supLocation == $scope.locationsAll[k].location) {
+					locID = $scope.locationsAll[k].sys_id;
+					break;
+				}
+			}//End inner for loop
+			
 			//Call to server to actually submit
 			var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
 			ajax.addParam('sysparm_name','submitSupplyDelivery');
 			ajax.addParam('sysparm_supply_type', supID);
-			//ajax.addParam('sysparm_location', supLocation); //TODO
+			ajax.addParam('sysparm_location', locID); 
 			ajax.addParam('sysparm_amount_of_boxes_delivered', supQuantity);
 			ajax.addParam('sysparm_delivered', supDate);
 			ajax.getXML(function ()  {
@@ -269,7 +280,7 @@ myApp.factory('suppliesFactory', function() {
 		}//End outer for loop
 		//Redirect user
 		var url = location.hostname;
-		window.location = url + '/x_casus_printsmart_supply_orders_list.do';
+		window.location = url + '/x_casus_printsmart_supply_deliveries_list.do';
 	};
 
 	
@@ -309,6 +320,20 @@ Must be used in ng-repeat
 	};
 })//- - End Directive - - //
 
+/* Provides autopopulated dropdown menu. 
+*/
+.directive('locationDropdown', function() {
+	return {
+		restrict: 'C',
+		template : 
+			'<datalist id="locationList">' +
+			'<div ng-repeat="sup in locationsAll track by $index">' +
+				'<option value="{{sup.location}}">' + 
+			'</div>' +
+			'</datalist>'
+	};
+})//- - End Directive - - //
+
 ;//- - - - -End App- - - - -//
 
 
@@ -331,6 +356,27 @@ function handleSupplyReferences(response) {
 	}//End For
 	
 }
+
+//Handles the XML call that retrieves supply sys_ids and supply_types
+//Assigns them to dat global supplyReferences 
+function handleLocationReferences(response) {
+	var locs = response.responseXML.getElementsByTagName("location");
+	for (var i = 0; i < locs.length; i++ ) {
+		//Temp object to push
+		var ref = {
+			"sys_id":"",
+			"location":""
+		};
+		//Fill temp obj with values from XML
+		ref.sys_id = locs[i].getAttribute("sys_id");
+		ref.location = locs[i].getAttribute("location");
+		supplyReferences.push(ref);
+	}//End For
+	
+}
+
+// - - - - End Handlers - - - - //
+
 /*
 Uses a global variable to store all the supplies
 */
@@ -338,6 +384,18 @@ function getSupplyReferences() {
 	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
 	ajax.addParam('sysparm_name','getSupplyTableReferences');
 	ajax.getXML(handleSupplyReferences);
+	ajax.getXMLWait();
+	//Now the supply references should have data (sys_id and supply_type)
+	return supplyReferences;
+}
+
+/*
+Uses a global variable to store all the locations
+*/
+function getLocationReferences() {
+	var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+	ajax.addParam('sysparm_name','getLocationReferences');
+	ajax.getXML(handleLocationReferences);
 	ajax.getXMLWait();
 	//Now the supply references should have data (sys_id and supply_type)
 	return supplyReferences;
@@ -360,7 +418,7 @@ function getCurrentDate() {
         <sys_created_on>2017-04-17 20:33:53</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>f46f26730f02b24012e4348ce1050e96</sys_id>
-        <sys_mod_count>147</sys_mod_count>
+        <sys_mod_count>157</sys_mod_count>
         <sys_name>x_casus_printsmart.angular_controller</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -368,7 +426,7 @@ function getCurrentDate() {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_script_f46f26730f02b24012e4348ce1050e96</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-03 20:14:46</sys_updated_on>
+        <sys_updated_on>2017-05-19 23:08:40</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
