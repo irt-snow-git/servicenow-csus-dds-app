@@ -2,11 +2,7 @@
 <record_update table="sys_ui_page">
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
-        <client_script><![CDATA[function test() {
-	alert("yo");
-}
-
-/*_________________________________________________________________
+        <client_script><![CDATA[/*_________________________________________________________________
    * Description: Hides all controller divs, turns off style on nav pills, then activiates
 		   the clicked element along with the corrosponding controller div (DOM MANIPULATION)
    * Parameters: @active_div (string): name of div to activate
@@ -161,7 +157,7 @@ function setActive(active_div, list_element) {
 		<!-- BEGIN Supplies Delivered Controller-->
 		<div ng-controller="SuppliesDelivered" id="supply_delivery_div" style="display: none">
 
-			<h1>Supplies Delivered (WORK IN PROGRESS)</h1>
+			<h1>Supplies Delivered</h1>
 			<p>Submit supplies delivered below.</p>
 
 			<!-- Repeats based on amount of data -->
@@ -220,7 +216,7 @@ function setActive(active_div, list_element) {
         <sys_created_on>2017-04-17 20:26:44</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>58ed6a330f02b24012e4348ce1050ec2</sys_id>
-        <sys_mod_count>78</sys_mod_count>
+        <sys_mod_count>79</sys_mod_count>
         <sys_name>submit_supplies_received</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -228,6 +224,6 @@ function setActive(active_div, list_element) {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_page_58ed6a330f02b24012e4348ce1050ec2</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-19 22:47:06</sys_updated_on>
+        <sys_updated_on>2017-05-22 21:04:23</sys_updated_on>
     </sys_ui_page>
 </record_update>
