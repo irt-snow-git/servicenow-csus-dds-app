@@ -56,17 +56,17 @@ function setActive(active_div, list_element) {
 	<div>
 
 			<ul class="nav nav-pills">
-				<li class="active" onclick="setActive('supply_receive_div', this)" id="supply_receive_li">
-					<a href="#" >Supply Received</a>
+				<li class="active" onclick="setActive('supply_delivery_div',this)" id="supply_delivery_li">
+					<a href="#">Supply Delivered</a>
 				</li>
 				<li onclick="setActive('supply_order_div', this)" id="supply_order_li">
 					<a href="#">Supply Order</a>
 				</li>
-				<li onclick="setActive('supply_delivery_div',this)" id="supply_delivery_li">
-					<a href="#">Supply Delivered</a>
+				<li  onclick="setActive('supply_receive_div', this)" id="supply_receive_li">
+					<a href="#" >Supply Received</a>
 				</li>
 			</ul>
-		<div ng-controller="SuppliesReceived" id="supply_receive_div">
+		<div ng-controller="SuppliesReceived" id="supply_receive_div" style="display: none">
 
 			<h1>Supplies Received</h1>
 			<p>Submit supplies received below.</p>
@@ -155,7 +155,7 @@ function setActive(active_div, list_element) {
 		<!-- END Supplies Ordered Controller-->
 		
 		<!-- BEGIN Supplies Delivered Controller-->
-		<div ng-controller="SuppliesDelivered" id="supply_delivery_div" style="display: none">
+		<div ng-controller="SuppliesDelivered" id="supply_delivery_div" style="display: block">
 
 			<h1>Supplies Delivered</h1>
 			<p>Submit supplies delivered below.</p>
@@ -216,7 +216,7 @@ function setActive(active_div, list_element) {
         <sys_created_on>2017-04-17 20:26:44</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>58ed6a330f02b24012e4348ce1050ec2</sys_id>
-        <sys_mod_count>79</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>submit_supplies_received</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -224,6 +224,6 @@ function setActive(active_div, list_element) {
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_ui_page_58ed6a330f02b24012e4348ce1050ec2</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-22 21:04:23</sys_updated_on>
+        <sys_updated_on>2017-05-23 17:48:53</sys_updated_on>
     </sys_ui_page>
 </record_update>
