@@ -2,142 +2,114 @@
 <record_update>
     <sys_ui_section caption="" section_id="1d168f8e6f687a00ad6cd4a21c3ee4a6" sys_domain="global" table="x_casus_printsmart_supply_orders" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>0</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:34</sys_created_on>
-            <sys_id>f9d65b466fa87a00ad6cd4a21c3ee459</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:34</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
             <element>supply_type</element>
-            <position>1</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:35</sys_created_on>
-            <sys_id>7dd65b466fa87a00ad6cd4a21c3ee459</sys_id>
+            <position>0</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-07-10 16:54:26</sys_created_on>
+            <sys_id>983366b26fbb3640ad6cd4a21c3ee4d2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:35</sys_updated_on>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>amount_ordered</element>
-            <position>2</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:35</sys_created_on>
-            <sys_id>fdd65b466fa87a00ad6cd4a21c3ee459</sys_id>
+            <position>1</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-07-10 16:54:26</sys_created_on>
+            <sys_id>1c3366b26fbb3640ad6cd4a21c3ee4d2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:35</sys_updated_on>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>xerox_order_number</element>
+            <position>2</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-07-10 16:54:26</sys_created_on>
+            <sys_id>9c3366b26fbb3640ad6cd4a21c3ee4d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>3</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:35</sys_created_on>
-            <sys_id>71d65b466fa87a00ad6cd4a21c3ee45a</sys_id>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-07-10 16:54:26</sys_created_on>
+            <sys_id>103366b26fbb3640ad6cd4a21c3ee4d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:35</sys_updated_on>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
             <position>4</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:35</sys_created_on>
-            <sys_id>f1d65b466fa87a00ad6cd4a21c3ee45a</sys_id>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-07-10 16:54:26</sys_created_on>
+            <sys_id>903366b26fbb3640ad6cd4a21c3ee4d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:35</sys_updated_on>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>received</element>
             <position>5</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:35</sys_created_on>
-            <sys_id>75d65b466fa87a00ad6cd4a21c3ee45a</sys_id>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-07-10 16:54:26</sys_created_on>
+            <sys_id>143366b26fbb3640ad6cd4a21c3ee4d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:35</sys_updated_on>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>ordered</element>
             <position>6</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:35</sys_created_on>
-            <sys_id>f5d65b466fa87a00ad6cd4a21c3ee45a</sys_id>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-07-10 16:54:26</sys_created_on>
+            <sys_id>943366b26fbb3640ad6cd4a21c3ee4d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:35</sys_updated_on>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>date_received</element>
             <position>7</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:35</sys_created_on>
-            <sys_id>79d65b466fa87a00ad6cd4a21c3ee45a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:35</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>8</position>
-            <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-01-27 23:20:35</sys_created_on>
-            <sys_id>f9d65b466fa87a00ad6cd4a21c3ee45a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-01-27 23:20:35</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>xerox_order_number</element>
-            <position>9</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-07-10 16:35:46</sys_created_on>
-            <sys_id>76eed2326fbb3640ad6cd4a21c3ee4b1</sys_id>
+            <sys_created_on>2017-07-10 16:54:26</sys_created_on>
+            <sys_id>183366b26fbb3640ad6cd4a21c3ee4d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_printsmart_supply_orders" sys_domain="global" view="Default view">1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-07-10 16:35:46</sys_updated_on>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -152,7 +124,7 @@
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_name>x_casus_printsmart_supply_orders</sys_name>
             <sys_overrides display_value="">global</sys_overrides>
             <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
@@ -161,7 +133,7 @@
             <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
             <sys_update_name>sys_ui_section_1d168f8e6f687a00ad6cd4a21c3ee4a6</sys_update_name>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-07-10 16:35:46</sys_updated_on>
+            <sys_updated_on>2017-07-10 16:54:26</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>
