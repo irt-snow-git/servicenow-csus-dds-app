@@ -7,6 +7,7 @@
         <element default="javascript:gs.now();" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Ordered" mandatory="true" max_length="40" name="ordered" type="glide_date" use_dynamic_default="true"/>
         <element label="Received" max_length="40" name="received" type="boolean"/>
         <element label="Supply Type" mandatory="true" max_length="32" name="supply_type" reference="x_casus_printsmart_supplies" type="reference"/>
+        <element label="Xerox Order Number" max_length="40" name="xerox_order_number" type="string"/>
         <index name="index">
             <element name="supply_type"/>
         </index>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_casus_printsmart_supplies">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="xerox_order_number" table="x_casus_printsmart_supply_orders">
         <active>true</active>
         <array>false</array>
-        <attributes>live_feed=false</attributes>
-        <audit>true</audit>
+        <attributes/>
+        <audit>false</audit>
         <calculation>(function calculatedFieldValue(current) {
 
 	// Add your code here
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Xerox Order Number</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,13 +27,13 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>xerox_order_number</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <name>x_casus_printsmart_supplies</name>
+        <name>x_casus_printsmart_supply_orders</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -49,19 +49,19 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
-        <sys_created_by>nicholasmyers</sys_created_by>
-        <sys_created_on>2016-12-07 21:57:14</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>bfaad8bd0fe7ea0012e4348ce1050eaa</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>x_casus_printsmart_supplies</sys_name>
+        <sys_created_by>gg622</sys_created_by>
+        <sys_created_on>2017-07-10 16:35:45</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a1ce56f66f7b3640ad6cd4a21c3ee429</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xerox Order Number</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
-        <sys_update_name>sys_dictionary_x_casus_printsmart_supplies_null</sys_update_name>
-        <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-04-26 22:35:15</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_casus_printsmart_supply_orders_xerox_order_number</sys_update_name>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-07-10 16:35:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

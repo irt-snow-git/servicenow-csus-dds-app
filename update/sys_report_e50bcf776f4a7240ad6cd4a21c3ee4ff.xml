@@ -85,9 +85,9 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-04-17 22:32:31</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>e50bcf776f4a7240ad6cd4a21c3ee4ff</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Supplies Approaching or Reached Minimum Quantity</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
@@ -95,7 +95,7 @@
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
         <sys_update_name>sys_report_e50bcf776f4a7240ad6cd4a21c3ee4ff</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-04-19 19:15:07</sys_updated_on>
+        <sys_updated_on>2017-07-06 20:40:56</sys_updated_on>
         <table>x_casus_printsmart_supplies</table>
         <title>Supplies Approaching or Reached Minimum Quantity</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -106,7 +106,7 @@
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>
         <use_color_palette>true</use_color_palette>
-        <user>c44d0241fccff400afd74c548b802fc3</user>
+        <user>group</user>
         <users/>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>

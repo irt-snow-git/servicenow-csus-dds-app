@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id display_value="IRT PrintSmart" name="IRT PrintSmart">fb9727bc0a0a3c9e007e897506e363c4</group_id>
+        <report_id display_value="Supplies Approaching or Reached Minimum Quantity">e50bcf776f4a7240ad6cd4a21c3ee4ff</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-07-06 20:40:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cba03a656fffb240ad6cd4a21c3ee434</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e50bcf776f4a7240ad6cd4a21c3ee4ff</sys_name>
+        <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
+        <sys_update_name>sys_report_users_groups_cba03a656fffb240ad6cd4a21c3ee434</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-07-06 20:40:56</sys_updated_on>
+        <user_id/>
+    </sys_report_users_groups>
+</record_update>
