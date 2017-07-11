@@ -22,14 +22,14 @@
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2016-12-07 21:57:11</sys_created_on>
         <sys_id>3aaadc790fe7ea0012e4348ce1050e16</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-04-28 18:28:45</sys_updated_on>
+        <sys_updated_on>2017-07-11 01:51:39</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role display_value="x_casus_printsmart.user" name="x_casus_printsmart.user">0baad8bd0fe7ea0012e4348ce1050e85</user_role>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
     </sys_app>
 </record_update>
