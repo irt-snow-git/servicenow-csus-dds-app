@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_filter">
     <sys_filter action="INSERT_OR_UPDATE">
-        <filter table="sys_user">nameSTARTSWITHandrey g^nameISNOTEMPTY^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="andrey g"/>
+        <filter table="sys_user">nameSTARTSWITHandrey gorb^nameISNOTEMPTY^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="andrey gorb"/>
             <item endquery="false" field="name" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <group/>
-        <last_used>2017-07-10 21:05:01</last_used>
+        <last_used>2017-10-30 19:59:51</last_used>
         <mobile>true</mobile>
         <roles/>
         <sys_class_name>sys_filter</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
-        <sys_created_on>2017-07-10 21:05:01</sys_created_on>
+        <sys_created_on>2017-10-30 19:59:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>c38cd33a6ffb3640ad6cd4a21c3ee491</sys_id>
+        <sys_id>58bf33ba6fc60740ad6cd4a21c3ee4dc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>mobile</sys_name>
         <sys_package display_value="PrintSmart Inventory Management" source="x_casus_printsmart">3aaadc790fe7ea0012e4348ce1050e16</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="PrintSmart Inventory Management">3aaadc790fe7ea0012e4348ce1050e16</sys_scope>
-        <sys_update_name>sys_filter_c38cd33a6ffb3640ad6cd4a21c3ee491</sys_update_name>
+        <sys_update_name>sys_filter_58bf33ba6fc60740ad6cd4a21c3ee4dc</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-07-10 21:05:01</sys_updated_on>
+        <sys_updated_on>2017-10-30 19:59:51</sys_updated_on>
         <table>sys_user</table>
         <title>mobile</title>
         <user display_value="Nicholas Myers">c44d0241fccff400afd74c548b802fc3</user>
